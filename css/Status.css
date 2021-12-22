@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+*{
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+
+
+/**** 수익 현황 부분  ****/ 
+.StatusContainer {
+	width: 1080px;
+    height: 100%;
+    padding: 0 20px;
+}
+
+#Title h2 {
+	display: inline;
+}
+
+#myRevenueImg{
+	width: 30px;
+	hieght: 30px;
+}
+
+
+/*** 중간 현황별 Main 박스 부분 ***/
+
+#StatusMain{
+	display: flex;
+	margin-top: 30px;
+}
+
+
+.StatusBox{
+	height: 350px;
+	width: 260px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px 5px gray;
+	
+	padding: 20px;
+}
+
+.StatusBoxImg{
+	width: 30px;
+	height: 30px;
+
+}
+
+.StatusBox img{
+	width: 220px;
+	height: 150px;
+}
+.StatusBox h2{
+	text-align: right;
+}
+.StatusBox a{
+	float: right;
+	padding: 10px;
+	text-decoration: none;
+	border: 2px solid #7ab6f8;
+	border-radius: 20px;
+	color: #7ab6f8;
+	margin-top: 20px;
+}
+
+.StatusBox a:hover{
+	background: #7ab6f8;
+	color: white;
+}
+
+#allStatusBtn{
+	width: 100%;
+	text-align: right;
+	margin-top: 30px;
+}
+#allStatusBtn a{
+	color: black;
+}
+#sumStatus {
+	text-align:center;
+	margin: 30px 0;
+}
+
+
+/***** CHART STYLE *****/
+
+#chartStyle {
+	width: 800px;
+	margin: 50px auto;
+}

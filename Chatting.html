@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JQuery  </title>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<link rel='stylesheet' href = 'css/Chatbot.css'>
+		<link rel='stylesheet' href = 'css/Chatting.css'>
+		<script src = 'js/Chatbot.js'></script>
+		<style>
+			#tempId{ /* 나중에 navbar 만들어지면 지워도 됨 */
+				width: 100%;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id = tempId></div>
+		<hr /><br>
+		
+		<!-- 수익 현황 부분 체크하기 -->
+		<div class = 'StatusContainer'>
+			<div id='Title'>
+				<img id='cutomerCenterImg' src = 'image/calls.png'>
+				<h2>고객센터</h2>
+			</div>
+		</div>
+		<div class = 'StatusContainer'>
+			<div id = 'subMenu'>
+				<div class='subTitle'><a href='CustomerCenter.html'><img src = 'image/questionImg.png'/><p>자주묻는 질문</p></a></div>
+				<div class='subTitle'><a id='check' href='Chatting.html'><img src = 'image/chatImg.png'/><p>1 : 1 채팅</p></a></div>
+			</div>
+			
+			
+		</div>
+		
+		
+		<div class = "chatContainer">
+			<!-- Header -->
+			<div id = "chatHeader">
+				<span>고객센터 채팅 봇</span>
+				<button id = "closeBtn">닫기X</button>
+			</div>
+			
+			<div id = 'chatContainer'>
+				<!-- 대화 내용 출력 영역 -->
+				<div id = "chatBox">
+				
+				</div>
+				
+				<!-- 질문 입력하기 위한 폼 -->
+				<div id='inputBox'>
+					<form id = "chatForm" method = "post">
+						<input type = "text" id = "message" name = "message" size = "30" 
+							placeholder = "질문을 입력하세요" autofocus>
+						<input type = "submit" id = "submitBtn" value = "전송">
+					</form>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		
+	</body>
+</html>

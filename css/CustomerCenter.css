@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+*{
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+
+.StatusContainer {
+	width: 1080px;
+    height: 100%;
+    padding: 0 20px;
+}
+
+#cutomerCenterImg{
+	width: 40px;
+	height: 30px;
+}
+
+#Title h2 {
+	display: inline;
+}
+
+
+#subMenu {
+	display: flex;
+	width: 80%;
+	font-size: 20px;
+}
+
+
+#subMenu div:first-child{
+	border-bottom: 4px solid #7ab6f8;
+}
+
+.subTitle img{
+	width: 40px;
+	height: 30px;
+}
+
+.subTitle {
+	flex: 1;
+	text-align: center;
+
+	padding: 20px;
+	margin: 0 5px;
+}
+.subTitle a{
+	display: block;
+}
+.subTitle img{
+	width: 70px;
+	height: 60px;
+}
+.subTitle a#check{
+	text-decoration: none;
+	color: #7ab6f8;
+	font-weight: bold;
+}
+
+.subTitle a:not(#check){
+	text-decoration: none;
+	color: black;
+}
+
+
+
+/******* TABLE ***********/
+
+#tableContainer {
+	margin: 40px 0;
+}
+table.questionTable {
+  border-collapse: collapse;
+  text-align: center;
+  line-height: 1.5;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+}
+
+table.questionTable a {
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+
+table.questionTable th {
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  background: #021233;
+  color: white;
+}
+
+table.questionTable  td:first-child, table.questionTable td:nth-child(2){
+  width: 150px;
+  border-right: 1px solid #d8d8d8;
+}
+
+table.questionTable td {
+  width: 600px;
+  padding: 10px;
+  vertical-align: top;
+}
+table.questionTable tr:nth-child(2n-1){
+  background: #efefef;
+}
+
+
+
+
+/**************************************************/
+/******************* PAGE NUMBER ******************/
+
+.page_wrap {
+	text-align:center;
+	font-size:0;
+	margin: 30px 0;
+ }
+.page_nation {
+	display:inline-block;
+}
+.page_nation a {
+	display:block;
+	margin:0 3px;
+	float:left;
+	border:1px solid #e6e6e6;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	background-color:#fff;
+	font-size:13px;
+	color:#999999;
+	text-decoration:none;
+}
+.page_nation a.active {
+	background-color:#42454c;
+	color:#fff;
+	border:1px solid #42454c;
+}

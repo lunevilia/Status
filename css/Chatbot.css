@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+
+.chatContainer {
+	width: 500px;
+	margin: 50px auto;
+}
+#chatHeader {
+	padding: 10px;
+	border-bottom : 2px solid black;	
+}
+
+#closeBtn {
+	border : none;
+	background: none;
+	float: right;
+	margin-top: 30px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+#chatBox {
+	width: 500px;
+	height: 600px;
+	overflow-y: scroll;
+	padding: 10px 15px;
+	background: #7ab6f8;
+	border-radius: 30px;
+	display:flex;
+	flex-direction:column;
+} 
+
+
+/****************** 챗봇 입력하는 부분 ******************/
+#inputBox{
+	margin: 10px 0;
+}
+#message {
+	width: 440px;
+	padding: 5px;
+	font-size: 20px;
+	outline: none;
+	border: 3px solid black;
+	border-radius: 10px;
+}
+
+#submitBtn {
+	float: right;
+	padding: 7px;
+	color: black;
+	font-weight: bold;
+	background : white;
+	border: 3px solid #7ab6f8;
+	border-radius: 10px;
+}
+
+#submitBtn:hover {
+	background: #7ab6f8;
+	color: white;
+}
+/**************************************************/
+
+
+.msgBox > span {
+	padding: 3px 5px;
+	word-break: break-all;
+	display: block;
+	max-width: 300px;
+	
+	border-radius: 10px;
+}
+
+.msgBox.send > span{
+	
+	background:#fef01b; 
+	float:right;
+}
+
+/*  * { margin: 0 auto;} 로 해 놓아서 float의 right와 left가 먹히지 않는현상이 발생하여 이를 수정 */
+.msgBox.send {
+	margin: 0;
+    min-height: 16px;
+}
+
+.msgBox.receive {
+	margin: 0;
+}
+
+
+.msgBox.receive > span{	
+	background:#ffffff;
+	float:left;
+}
